@@ -1,0 +1,211 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1 class="logo">My Portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Hello! I am a web developer passionate about building creative and user-friendly websites. I love coding and am constantly learning new technologies.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <h3>Project 1</h3>
+        <p>A description of the first project goes here. It's a cool web app I built using HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="project-card">
+        <h3>Project 2</h3>
+        <p>A description of the second project goes here. It's a responsive website with modern design features.</p>
+      </div>
+      <div class="project-card">
+        <h3>Project 3</h3>
+        <p>A description of the third project goes here. It's an e-commerce site with secure payment integration.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <form action="#" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 My Portfolio</p>
+    </div>
+  </footer>-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1 class="logo">My Portfolio</h1>
+      <nav>
+        <ul>
+          <!--<li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="Technical Skill">Technical Skill</a></li>-->
+          <li><a href="#about" onclick="showSection('about')">About Me</a></li>
+          <li><a href="#projects" onclick="showSection('projects')">Projects</a></li>
+          <li><a href="#skills" onclick="showSection('skills')">Technical Skills</a></li>
+          <li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero">
+    <div class="hero-content">
+      <h2>Welcome to My Portfolio</h2>
+      <p>I'm a passionate web developer who loves creating innovative and engaging websites.</p>
+      <a href="#projects" class="cta-button">Explore My Work</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <img src="https://youmeandtrends.com/wp-content/uploads/2015/11/flowers-rose-garden-wallpaper-for-desktop.jpg" alt="Your Name" class="circle-image">
+
+      <p>Hi, I'm [Your Name]. I specialize in creating dynamic and beautiful web applications. I am proficient in modern web technologies and continuously strive to improve my skills.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <img src="https://img.freepik.com/premium-vector/snake-games-cartoon-3d-style-text-effect_158784-1597.jpg" alt="Project 1">
+        <h3>Project 1</h3>
+        <p>This is a web app I developed using React.js and Node.js. It features real-time data and user authentication.</p>
+        <a href="https://github.com/Kasak-Yadav/Snake-Game.git" class="project-link">View Project</a>
+      
+      </div>
+      <div class="project-card">
+        <img src="https://i.morioh.com/15cf743cd3.png" alt="Project 2">
+        <h3>Project 2</h3>
+        <p>A responsive e-commerce site with a fully integrated shopping cart and checkout process.</p>
+        <a href="https://kasak-yadav.github.io/Calculator/" class="project-link">View Project</a>
+      </div>
+      <div class="project-card">
+        <img src="https://www.shopbecker.com/globalassets/product-images/150512.jpg" alt="Project 3">
+        <h3>Project 3</h3>
+        <p>A personal blog site where I share tutorials and web development resources.</p>
+        <a href="https://github.com/Kasak-Yadav/Tic-Tac-Toe.git" class="project-link">View Project</a>
+      </div>
+      
+    </div>
+  </section>
+  <!-- Technical Skills Section Added -->
+  <section id="skills">
+    <div class="container">
+      <h2>Technical Skills</h2>
+      <div class="skills-list">
+        <div class="skill-item">
+          <h3>Programming Languages</h3>
+          <ul>
+            <li class="skill">JavaScript</li>
+            <li class="skill">Python</li>
+            <li class="skill">HTML5</li>
+            <li class="skill">CSS3</li>
+            <li class="skill">TypeScript</li>
+          </ul>
+        </div>
+        <div class="skill-item">
+          <h3>Frameworks & Libraries</h3>
+          <ul>
+            <li class="skill">React.js</li>
+            <li class="skill">Node.js</li>
+            
+          </ul>
+        </div>
+        <div class="skill-item">
+          <h3>Version Control</h3>
+          <ul>
+            
+            <li class="skill">GitHub</li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <form action="#" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit" class="cta-button">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 My Portfolio | Designed by [Your Name]</p>
+    </div>
+  </footer>
+  
+</script>
+
+
+
+</body>
+</html>
+
+
