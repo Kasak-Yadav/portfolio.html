@@ -1,0 +1,368 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #645ead;
+  background-color: #f4f7fc;
+}
+
+/* Header */
+header {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-left: 20px; /* Added margin */
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #ff6347;
+}
+
+/* Hero Section */
+#hero {
+  background: linear-gradient(135deg, #ff6347, #f5a623);
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+#hero h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background-color: #fff;
+  color: #1a1a1a;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ff6347;
+  color: #fff;
+}
+
+/* About Section */
+#about {
+  background-color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+#about p {
+  font-size: 1rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+/* Projects Section */
+#projects {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+  justify-content: space-around; /* Distributes space between cards */
+}
+
+#projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-align: center;
+  width: 100%; /* Ensures the heading takes up the full width of the container */
+}
+
+/* Project Card */
+.project-card {
+  background-color: #fff;
+  padding: 20px;
+  margin: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 350px; /* Limiting max width for better card alignment */
+  height: 450px; /* Set a fixed height to ensure consistency */
+  flex-grow: 1; /* Allows the card to grow if there is available space */
+}
+
+.project-card img {
+  width: 100%; /* Full width for the image */
+  height: 200px; /* Set height for images to make them uniform */
+  object-fit: cover; /* Ensures the image covers the box */
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.project-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+  text-align: center;
+  flex-grow: 1; /* Ensures description area grows to fill available space */
+}
+
+.project-card:hover {
+  transform: translateY(-10px); /* Hover effect to lift the card */
+}
+
+/* Project Link */
+.project-link {
+  color: #ff6347;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  text-align: center;
+}
+
+.project-link:hover {
+  color: #1a1a1a;
+}
+
+/* Responsive Layout for Projects */
+@media (max-width: 768px) {
+  .project-card {
+    max-width: 45%; /* Increase width for medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .project-card {
+    max-width: 100%; /* Full-width cards for mobile */
+  }
+}
+
+
+
+/* Contact Section */
+/*#contact {
+  background-color: #fff;
+  padding: 60px 20px;
+}
+
+#contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px; /* Adjusted margin */
+  /*border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}*/
+/* Contact Section */
+#contact {
+  background-color: #fff;
+  padding: 60px 20px;
+  width: 100%; /* Ensures the section takes full width of its container */
+  box-sizing: border-box; /* Prevents padding from affecting the overall width */
+}
+
+#contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px; /* Increased margin for better separation */
+  text-align: center;
+}
+
+form {
+  max-width: 800px; /* Limits the width of the form for a more centered, structured layout */
+  margin: 0 auto; /* Centers the form */
+  padding: 20px;
+}
+
+form input, form textarea {
+  width: 100%; /* Ensures the inputs take full width of the form */
+  padding: 15px; /* Increased padding for more space inside the fields */
+  margin-bottom: 20px; /* Increased margin between fields */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box; /* Ensures padding doesn't affect the width */
+}
+
+form textarea {
+  height: 150px; /* Sets a reasonable height for the textarea */
+  resize: vertical; /* Allows resizing vertically for better usability */
+}
+
+
+form button {
+  background-color: #ff6347;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #f5a623;
+}
+
+/* Footer */
+footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+/* Circle Image */
+.circle-image {
+  width: 250px; /* You can adjust the size */
+  height: 250px; /* You should keep width and height the same for a perfect circle */
+  border-radius: 50%; /* This makes the image circular */
+  object-fit: cover; /* Ensures the image covers the area properly without distortion */
+  overflow: hidden; /* Hides any overflow if the image is not exactly fitting */
+  margin: 0 auto; /* Centers the image */
+  padding: 10px; /* Adds padding around the image */
+}
+/* Styles for the Skills Section */
+#skills {
+background-color: #fcfafa;
+padding: 50px 0;
+}
+
+#skills h2 {
+text-align: center;
+font-size: 2.5rem;
+margin-bottom: 30px;
+}
+
+.skills-list {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+
+.skill-item {
+width: 30%;
+margin: 15px;
+text-align: center;
+}
+
+.skill-item h3 {
+font-size: 1.8rem;
+margin-bottom: 10px;
+}
+
+.skill-item ul {
+list-style-type: none;
+padding: 0;
+}
+
+.skill-item .skill {
+font-size: 1.2rem;
+margin: 8px 0;
+padding: 8px 20px;
+border: 2px solid #ccc;
+border-radius: 5px;
+transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.skill-item .skill:hover {
+background-color: #4caf50; /* Green */
+color: #fff;
+transform: scale(1.1);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+.skill-item {
+  width: 45%;
+}
+}
+
+@media (max-width: 480px) {
+.skill-item {
+  width: 100%;
+}
+}
+/* Initial state for sections */
+.hidden {
+display: none;
+}
+
+/* Transition for smooth revealing */
+section {
+opacity: 0;
+transition: opacity 0.5s ease-in-out;
+}
+
+section:not(.hidden) {
+opacity: 1;
+}
+#chat-box {
+  height: 300px;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: column-reverse;
+}
